@@ -37,7 +37,7 @@ if(process.env.NODE_ENV === "production"){
 
 const connect = () => {
     mongoose
-        .connect(process.env.MONGO_URL,
+        .connect(process.env.MONGO_URI,
             {useNewUrlParser: true,
             useUnifiedTopology: true,
         useNewUrlParser: true})
@@ -56,7 +56,7 @@ const connect = () => {
 
 app.listen(process.env.PORT || 8000, () => {
     connect();
-    console.log("MONGO_URL", process.env.MONGO_URL);
+    console.log("MONGO_URI", process.env.MONGO_URI);
     console.log("PASSCODE", process.env.PASSCODE);
     console.log(`LISTENING ON PORT ${process.env.PORT}`);
 })
