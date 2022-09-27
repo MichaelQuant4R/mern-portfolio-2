@@ -3,6 +3,7 @@ const dotenv = require("dotenv");
 const cookieParser = require("cookie-parser");
 const mongoose = require("mongoose");
 const cors = require("cors");
+const path = require("path");
 dotenv.config();
 
 const authRouter = require("./routes/auth");
@@ -38,6 +39,13 @@ const connect = () => {
         })
 };
 
+
+if(process.env.NODE_ENV === "production"){
+    app.use(express.static("client/build"));
+    app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    });
+}
 
 app.listen(process.env.PORT, () => {
     connect();
