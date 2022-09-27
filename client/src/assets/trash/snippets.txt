@@ -1,0 +1,56 @@
+{/* 
+      <div className="project-container">
+        <img src="https://t3.ftcdn.net/jpg/00/86/44/52/360_F_86445228_gKMvSNFbPtjRujG93mdvQ3NV6n2gQ3ux.jpg" alt="" className="src" />
+        <div className='project-info'>
+          <span className="project-title">Chat App</span>
+          <span className="project-date">Posted: 19 Sep 2022</span>
+          <div className="project-desc">Simple chat app using socket.io</div>
+
+          <div className="project-tags">
+            <div className="tag">Socket IO</div>
+            <div className="tag">React</div>
+            <div className="tag">Event Listeners</div>
+          </div>
+        </div>
+      </div>
+      <div className="project-container">
+        <img src="https://t3.ftcdn.net/jpg/00/86/44/52/360_F_86445228_gKMvSNFbPtjRujG93mdvQ3NV6n2gQ3ux.jpg" alt="" className="src" />
+        <div className='project-info'>
+          <span className="project-title">Blog App</span>
+          <span className="project-date">Posted: 19 Sep 2022</span>
+          <div className="project-desc">Simple chat app using socket.io</div>
+        </div>
+      </div>
+      <div className="project-container">
+        <img src="https://t3.ftcdn.net/jpg/00/86/44/52/360_F_86445228_gKMvSNFbPtjRujG93mdvQ3NV6n2gQ3ux.jpg" alt="" className="src" />
+        <div className='project-info'>
+          <span className="project-title">Anagram App</span>
+          <span className="project-date">Posted: 19 Sep 2022</span>
+          <div className="project-desc">Simple chat app using socket.io</div>
+        </div>
+      </div>
+      <div className="project-container">
+        <img src="https://t3.ftcdn.net/jpg/00/86/44/52/360_F_86445228_gKMvSNFbPtjRujG93mdvQ3NV6n2gQ3ux.jpg" alt="" className="src" />
+        <div className='project-info'>
+          <span className="project-title">Blog App</span>
+          <span className="project-date">Posted: 19 Sep 2022</span>
+          <div className="project-desc">Simple chat app using socket.io</div>
+        </div>
+      </div>
+      <div className="project-container">
+        <img src="https://t3.ftcdn.net/jpg/00/86/44/52/360_F_86445228_gKMvSNFbPtjRujG93mdvQ3NV6n2gQ3ux.jpg" alt="" className="src" />
+        <div className='project-info'>
+          <span className="project-title">YouTube Clone App</span>
+          <span className="project-date">Posted: 19 Sep 2022</span>
+          <div className="project-desc">Simple chat app using socket.io</div>
+        </div>
+      </div>
+      <div className="project-container">
+        <img src="https://t3.ftcdn.net/jpg/00/86/44/52/360_F_86445228_gKMvSNFbPtjRujG93mdvQ3NV6n2gQ3ux.jpg" alt="" className="src" />
+        <div className='project-info'>
+          <span className="project-title">Stripe App</span>
+          <span className="project-date">Posted: 19 Sep 2022</span>
+          <div className="project-desc">Simple chat app using socket.io</div>
+        </div>
+      </div>
+     */}

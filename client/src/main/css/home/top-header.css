@@ -1,0 +1,110 @@
+#top-header{
+    background-color: var(--background);
+    min-height:500px;
+    color:var(--text-primary);
+    width:100%;
+}
+
+#top-header .stones:nth-of-type(1){
+    background: linear-gradient(gray, black);
+    width:50%;
+    height:50px;
+    border-radius:50%;
+}
+
+#top-header #code-icon-full-container{
+    border:5px solid  var(--text-primary);
+    /* width:80 */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    flex-direction: row;
+    align-items: center;
+    min-height:350px;
+   
+    
+}
+
+#top-header #code-icon-container{
+    font-size: 200px;
+}
+
+
+#typewriter-container{
+  position:absolute;
+    justify-content: center;
+    display: flex;
+    top:340px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: var(--text-primary);
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+    font-size: 25px;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+  }
+
+
+  #top-header .code-icon-text{
+    font-size:120px;
+    display: flex;
+    flex-direction: column;
+    opacity:0.3;
+  }
+
+  #top-header-flex-title{
+    /* display: flex;
+    justify-content: center; */
+  }
+
+
+  #top-header-title{
+    z-index:20;
+    font-size: 70px;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    top:150px;
+    /* color:mediumturquoise; */
+    font-weight: bold;
+    font-family:fantasy;
+    /* text-shadow: 5px 5px 5px crimson; */
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(crimson 30%,  steelblue 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.3s ease-out;
+  }
+
+@media screen and (max-width:860px){
+
+    #top-header-title{
+  
+      /* font-size: 50px;
+      transition: 0.3s ease-in; */
+      /* translate: 10%; */
+    }
+}
+
+

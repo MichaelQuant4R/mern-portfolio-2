@@ -1,0 +1,23 @@
+
+#coming-soon{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#coming-soon-container{
+    background-color: crimson;
+    padding:5px;
+    width:50%;
+    text-align: center;
+    border-radius: 10px;
+    margin-top:50px;
+    
+}
+
+#coming-soon-container h3{
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: capitalize;
+}

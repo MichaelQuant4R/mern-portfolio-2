@@ -1,0 +1,24 @@
+#admin-table table{
+    border-collapse: collapse;
+    position:absolute;
+    left:30%;
+}
+
+#admin-table table td, #user-table table th{
+    border:1px solid dodgerblue;
+    text-align: center;
+    padding:5px;
+}
+
+
+#admin-table td:hover{
+    background-color: lightblue;
+    cursor: pointer;
+}
+
+#admin-table td a:hover{
+    font-weight: bold;
+    transition: 0.2s ease-in;
+    color:dodgerblue;
+    
+}

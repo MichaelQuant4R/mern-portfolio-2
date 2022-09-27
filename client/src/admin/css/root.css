@@ -1,0 +1,8 @@
+:root{
+
+    --bg-color:#fff;
+    --navbar-color: steelblue;
+    --footer-color: royalblue;
+    /* background-color:royalblue; */
+    font-family: Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,319 @@
+#contact{
+    min-height:500px;
+    background-color: var(--background);
+    padding:20px;
+    color:var(--text-primary)
+
+}
+
+#contact h2{
+    /* margin-top:-1px; */
+    text-align: center;
+    font-size: 30px;
+}
+
+
+#contact-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+#contact form{
+    font-weight: bold;
+}
+
+#contact #contact-container form > #contact-textarea{
+    outline:none;
+    border-radius: 5px;
+    width:57%;
+    transition: 0.2s ease-out;
+    /* max-width:365px;
+    min-width: 300px; */
+
+
+}
+
+
+
+
+.left{
+    height: 100px;
+    width: 100px;
+    background-color: seagreen;
+    transform-origin: 0 0;
+    transform: rotate(90deg) skewX(-30deg) scaleY(0.864);
+    font-size: 80px;
+    color:lightblue;
+     cursor: pointer;
+}
+.right{
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    transform-origin: 0 0;
+    transform: rotate(-30deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    bottom: 100px;
+    font-size: 80px;
+    color:white;
+     cursor: pointer;
+}
+.top{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+    transform-origin: 0 0;
+    transform: rotate(210deg) skew(-30deg) scaleY(0.864);
+    position: relative;
+    bottom: 200px;
+    font-size: 80px;
+    color:black;
+     cursor: pointer;
+}
+
+
+
+.mid-center-right{
+    height: 100px;
+    width: 100px;
+    background-color:tomato;
+    transform-origin: 0 0;
+
+    /* transform: rotate(30deg) skewX(-30deg) scaleY(0.864); */
+    transform: rotate(300deg) skewX(-30deg) scaleY(0.864);
+    font-size: 80px;
+    color:lightblue;
+    position:relative;
+    bottom:100px;
+    rotate:-30deg;
+     cursor: pointer;
+}
+
+.mid-center-left{
+    height: 100px;
+    width: 100px;
+    background-color:dodgerblue;
+    transform-origin: 0 0;
+    transform: rotate(180deg) skewX(-30deg) scaleY(0.864);
+    font-size: 80px;
+    color:crimson;
+    position:relative;
+    bottom:200px;
+    rotate:-30deg;
+     cursor: pointer;
+}
+
+
+.mid-center-right-side{
+    height: 100px;
+    width: 100px;
+    background-color:violet;
+    transform-origin: 0 0;
+    transform: rotate(-30deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    bottom: 350px;
+    left:85px;
+    font-size: 80px;
+    color:white;
+    rotate:-360deg;
+     cursor: pointer;
+}
+
+
+
+.mid-center-left-side{
+    height: 100px;
+    width: 100px;
+    background-color:blue;
+    transform-origin: 0 0;
+    transform: rotate(30deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    bottom: 550px;
+    left:85px;
+    font-size: 80px;
+    color:white;
+    rotate:-360deg;
+     cursor: pointer;
+}
+
+
+.mid-center-left-top-side{
+    height: 100px;
+    width: 100px;
+    background-color:thistle;
+    transform-origin: 0 0;
+    transform: rotate(90deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    bottom: 550px;
+    left:-85px;
+    font-size: 80px;
+    color:white;
+     cursor: pointer;
+}
+
+.mid-center-left-bottom-side{
+    height: 100px;
+    width: 100px;
+    background-color:slateblue;
+    transform-origin: 0 0;
+    transform: rotate(30deg) skewX(-30deg) scaleY(0.864);
+    position: relative;
+    bottom: 750px;
+    left:-85px;
+    font-size: 80px;
+    color:white;
+     cursor: pointer;
+}
+
+
+.top svg, .left svg, .right svg,
+.mid-center-right svg,
+.mid-center-left svg,
+.mid-center-right-side svg,
+.mid-center-left-side svg,
+.mid-center-left-top-side svg,
+.mid-center-left-bottom-side svg
+{
+
+    position:relative;
+    left:7px;
+    animation: rotateBoxIcon 20s linear 5s infinite forwards;
+   
+    
+}
+
+
+@keyframes rotateBoxIcon{
+
+    0%{
+        rotate: 0deg;
+    }
+
+    100%{
+        rotate: 360deg;
+    }
+}
+
+#contact-box-container{
+    position:relative;
+    top:180px;
+    right:50px;
+    transition:0.5s ease-out;
+}
+
+#contact-hand svg{
+    /* color */
+
+    animation: movingFinger 2s linear 0s infinite alternate;
+}
+
+@keyframes movingFinger {
+
+    0%{
+
+        transform: translateY(0);
+    }
+    100%{
+
+        transform: translateY(10px);
+
+    }
+    
+}
+
+#contact-container form   input[type='submit']{
+    padding:5px 10px 5px 10px;
+    width:57.5%;
+    cursor: pointer;
+    outline:none;
+    border: none;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: 0.2s ease-out;
+}
+
+#contact-container form   input[type='submit']:hover{
+    background-color: dodgerblue;
+    color:white;
+    transition: 0.3s ease-in;
+}
+
+#contact-container form   input[type='text'], #contact-container form   input[type='email']{
+    width:57.5%;
+    border-radius:5px;
+    transition: 0.2s ease-out;
+
+}
+
+#contact-container  form #contact-textarea:focus{
+    background-color:plum;
+
+
+}
+
+
+#contact #contact-email{
+    padding:5px;
+    background-color:orchid;
+    width:fit-content;
+    font-weight:bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contact-container #contact-copied-text{
+    background-color: skyblue;
+    padding:5px;
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    position:relative;
+    top:10px;
+    transition:0.3s ease-in;
+}
+
+
+@media screen and (max-width:800px){
+
+    #contact-container form   input[type='text'], #contact-container form   input[type='email'],
+    #contact-container form   input[type='submit']{
+        width:99%;
+        transition: 0.5s ease-in;
+    }
+
+    #contact #contact-container form > #contact-textarea{
+        width:98%;
+        transition: 0.5s ease-in;
+    }
+
+   
+}
+
+#contact-send-msg{
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-send-msg #contact-success,
+#contact-send-msg #contact-error{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#contact-send-msg #contact-success{
+    color:greenyellow;
+}
+#contact-send-msg #contact-error{
+    color:red;
+}
+
+#contact-title-header{
+    color:var(--text-primary);
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}

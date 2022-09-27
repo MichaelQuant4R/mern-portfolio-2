@@ -1,0 +1,31 @@
+#project-table table, #project-table  td, #project-table  tr, #project-table  th{
+    border-collapse: collapse;
+
+}
+
+#project-table  .project-table-click-img{
+    height:200px;
+    width:200px;
+}
+
+#project-table table{
+   
+}
+
+
+#project-table #project-table-list{
+    width:100%;
+    
+    background-color:thistle;
+    padding:5px;
+}
+
+#project-table #project-table-list table{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+

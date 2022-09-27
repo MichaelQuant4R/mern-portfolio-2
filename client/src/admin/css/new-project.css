@@ -1,0 +1,22 @@
+#new-project #new-project-img{
+    height:200px;
+    width:250px;
+    cursor: pointer;
+    transition: 0.3s ease-out;
+    z-index:1000;
+    
+    /* margin-bottom:100px; */
+
+}
+#new-project #new-project-img-container{
+ 
+    display: flex;
+    justify-content: center;
+}
+
+#new-project #new-project-img:hover{
+
+    transform: scale(2.5);
+    transition: 0.3s ease-in;
+    
+}

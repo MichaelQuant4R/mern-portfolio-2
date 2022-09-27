@@ -1,0 +1,1 @@
+export const zen = require("./images/zen6.png");

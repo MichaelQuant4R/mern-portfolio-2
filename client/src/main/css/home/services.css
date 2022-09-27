@@ -1,0 +1,93 @@
+#services{
+    min-height:500px;
+    background-color:var(--background);
+    color:var(--text-primary);
+}
+
+
+#services-title-header{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+#services-container{
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    color:black;
+    flex-wrap: wrap;
+    padding:10px;
+    position:relative;
+    left:2%;
+    
+  
+    
+}
+
+#services-container .services-item{
+    background:linear-gradient(dodgerblue, purple,  white);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    width:80%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: 0.5s ease-out;
+    /* width:500px; */
+}
+#services-container .services-item:hover{
+    translate: 0 20px;
+    transition: 0.5s ease-in;
+}
+
+
+
+
+
+#services-container .services-item p{
+    text-align:left;
+    font-weight: bold;
+}
+#services-container .services-item .services-title{
+    font-weight: bold;
+    color: orange;
+    
+   
+}
+
+#services-container .services-item  .services-icon{
+   font-size: 30px;
+   font-weight: bold;
+   background-color: #fff;
+   border-radius: 50px 20px 10px 80px;
+    position:relative;
+    left:40%;
+    top:-10px;
+   animation:rotateServiceIcon 20s linear 0s infinite forwards;
+   padding:10px;
+   box-shadow: 5px 5px 5px black;
+}
+
+@keyframes rotateServiceIcon{
+
+    0%{
+        rotate:0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    #services-container{
+        grid-template-columns: auto;
+
+    }
+
+
+}

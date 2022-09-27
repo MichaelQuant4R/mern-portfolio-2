@@ -1,0 +1,65 @@
+/* @import "./main/css/global.css"; */
+
+#App {
+  color: var(--text-primary);
+  background-color: var(--background);
+  height: calc(100vh - 40px);
+  transition: all .5s;
+}
+
+
+#navbar #navbar-ul li > a{
+  color:var(--text-primary);
+  
+}
+
+#navbar #navbar-ul{
+  background-color: var(--navbar-color);
+  display: flex;
+  padding:5px;
+  height:25px;
+  position: fixed;
+  width:100%;
+  top:-16px;
+}
+
+#footer{
+  background-color: var(--footer-color);
+}
+
+#sidebar-container{
+  background-color: var(--sidebar-bg-color);
+}
+
+
+@media screen and (max-width:500px){
+
+  #sidebar-container{
+
+    width:26rem;
+  }
+
+}
+
+
+
+@media screen and (max-width:400px){
+
+
+  #navbar-left-side li:nth-of-type(2){
+      display: none;
+  }
+  #navbar-left-side li:nth-of-type(3){
+      display: none;
+  }
+
+  #sidebar-container{
+
+    width:22rem;
+  }
+
+  
+  
+}
+
+
