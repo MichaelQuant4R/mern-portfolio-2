@@ -1,0 +1,28 @@
+@import "root.css";
+@import "blog.css";
+@import "blogs.css";
+@import "flash.css";
+@import "footer.css";
+@import "header.css";
+@import "home.css";
+@import "navbar.css";
+@import "sidebar.css";
+@import "profile.css";
+@import "code-notes.css";
+@import "form.css";
+/* home folder */
+@import "./home/projects.css";
+@import "./home/top-header.css";
+@import "./home/contact.css";
+@import "./home/services.css";
+@import "./home/about.css";
+@import "./home/skills.css";
+@import "./home/bottom-footer.css";
+@import "./coming-soon.css";
+
+*{
+    list-style:none;
+    text-decoration:none;
+}
+
+

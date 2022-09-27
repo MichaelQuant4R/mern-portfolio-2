@@ -1,0 +1,6 @@
+#blog-table > table, td, th, tr{
+    border:1px solid dodgerblue;
+    border-collapse: collapse;
+    padding:5px;
+    text-align: center;
+}

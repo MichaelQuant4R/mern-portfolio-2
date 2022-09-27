@@ -1,0 +1,132 @@
+#projects-flex{
+    min-height:500px;
+    background-color: var(--background);
+    display: flex;
+    gap:20px;
+    padding:10px;
+    flex-wrap: wrap;
+    align-items: space-between;
+    justify-content: center;
+    color:var(--text-primary);
+    
+}
+
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background);
+   
+}
+
+#projects h2{
+    text-align:  center;
+    font-size: 30px;
+
+}
+
+
+#projects-flex .project-container{
+    cursor: pointer;
+    transition:0.5s ease-in-out;
+    border:3px solid lightblue;
+    padding:20px;
+    border-radius: 10px;
+}
+
+
+
+#projects-flex .project-container img{
+    height:250px;
+    /* width:250px; */
+    width:100%;
+    border-radius: 5px;
+    align-items: center;
+    transition: 0.5s ease-out;
+}
+
+#projects-flex .project-container img:hover{
+    transform: scale(1.5);
+    transition: 0.5s ease-in;
+}
+
+
+#projects-flex .project-container span{
+    display: flex;
+    flex-direction: column;
+}
+
+#projects-flex .project-container span:nth-of-type(1){
+    font-weight: bold;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 340px){
+
+    #projects-flex .project-container img{
+        height:200px;
+        
+       
+        /* border-radius: 5px; */
+    }
+    
+
+}
+
+#projects #projects-flex .project-container .project-tags{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+#projects #projects-flex .project-container .project-tags .tag{
+    background-color: royalblue;
+    padding:5px;
+    color:white;
+    font-weight: bold;
+    margin: 10px;
+    width:fit-content;
+    border-radius: 5px;
+    font-family: Tahoma;
+    transition: 0.2s ease-out;
+    
+}
+
+
+#projects #projects-flex .project-container .project-tags .tag:hover{
+    background-color: salmon;
+    transition: 0.2s ease-in;
+    color:black;
+}
+
+#projects-flex .project-container img:hover  .project-click-me{
+    opacity:0.5;
+    visibility: visible;
+    transition: 0.7s ease-in;
+    
+}
+.project-click-me{
+    border-radius: 5px 5px 0 0;
+    position:relative;
+    top:0px;
+    background-color: tomato;
+    color:white;
+    font-weight: bold;
+    font-size: 25px;
+    padding:5px;
+    z-index:10;
+    transition: 0.7s ease-out;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+#projects .project-container .tag:first-child{
+    
+    background-color: skyblue !important;
+    color:black;
+    
+ 
+}

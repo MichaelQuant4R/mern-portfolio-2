@@ -1,0 +1,27 @@
+@import "root.css";
+@import "admin-home.css";
+@import "new-blog.css";
+@import "user-table.css";
+@import "new-user.css";
+@import "super-user.css";
+@import "admin-navbar.css";
+@import "admin-footer.css";
+@import "admin-sidebar.css";
+@import "admin-table.css";
+@import "blog-table.css";
+@import "admin-blog.css";
+@import "loading.css";
+@import "new-project.css";
+@import "project-table.css";
+
+*{
+    list-style:none;
+    text-decoration: none;
+}
+body{
+
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+    background-color: var(--bg-color);
+}
