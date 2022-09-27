@@ -27,6 +27,13 @@ app.use("/api/admin", adminRouter);
 app.use("/api/contact", contactRouter);
 app.use("/api/project", projectRouter);
 
+if(process.env.NODE_ENV === "production"){
+    app.use(express.static("client/build"));
+    app.get("*", (req, res) => {
+        res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+    });
+}
+
 const connect = () => {
     mongoose
         .connect(process.env.MONGO_URL,
@@ -38,19 +45,15 @@ const connect = () => {
         })
         .catch((err) => {
             console.log(err);
-            throw err;
+            mongoose.disconnect(() => {
+                console.log("DISCONNECTED FROM MONGO DB");
+            });
         })
 };
 
 
-if(process.env.NODE_ENV === "production"){
-    app.use(express.static("client/build"));
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
-    });
-}
 
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT | 8000, () => {
     connect();
     console.log(`LISTENING ON PORT ${process.env.PORT}`);
 })
