@@ -16,7 +16,9 @@ const projectRouter = require("./routes/project");
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
+app.use(cors({
+    origin: "https://holistic-coding.herokuapp.com/api/"
+}));
 
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
@@ -29,7 +31,8 @@ const connect = () => {
     mongoose
         .connect(process.env.MONGO_URL,
             {useNewUrlParser: true,
-            useUnifiedTopology: true})
+            useUnifiedTopology: true,
+        useNewUrlParser: true})
         .then(() => {
             console.log("CONNECTED TO THE MONGO DB");
         })
