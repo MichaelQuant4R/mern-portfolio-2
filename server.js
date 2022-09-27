@@ -54,7 +54,7 @@ const connect = () => {
 
 
 
-app.listen(process.env.PORT | 8000, () => {
+app.listen(process.env.PORT || 8000, () => {
     connect();
     console.log(`LISTENING ON PORT ${process.env.PORT}`);
 })
