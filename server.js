@@ -16,9 +16,10 @@ const projectRouter = require("./routes/project");
 const app = express();
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({
-    origin: "https://holistic-coding.herokuapp.com/api/"
-}));
+app.use(cors());
+// app.use(cors({
+//     origin: process.env.PORT,
+// }));
 
 app.use("/api/auth", authRouter);
 app.use("/api/user", userRouter);
