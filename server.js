@@ -56,5 +56,7 @@ const connect = () => {
 
 app.listen(process.env.PORT || 8000, () => {
     connect();
+    console.log("MONGO_URL", process.env.MONGO_URL);
+    console.log("PASSCODE", process.env.PASSCODE);
     console.log(`LISTENING ON PORT ${process.env.PORT}`);
 })
